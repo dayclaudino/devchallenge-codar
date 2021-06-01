@@ -34,11 +34,11 @@ header h2 {
     font-style: italic;
 }
 
-header .logo b {
+header .logo span {
     color: black;
-    padding: 0.1rem;
-    font-weight: 700;
+    font-weight: 900;
     font-style: normal;
+    font-size: 3.0rem;
 }
 
 /* MENU */
@@ -250,17 +250,237 @@ header nav a:nth-child(4) { /* Botao */
     margin-bottom: 20px;
 }
 
-.contact a{
+.box a{
     color: #fff;
 }
 
-.socials .group {
+.box address {
+    font-style: normal;
+}
+
+.group {
     display: flex;
     justify-content: space-around;
     font-size: 2.0rem;
     color: var(--red);
 }
 
-.socials .group i {
+.group i {
     cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 600px) { 
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20%;
+        height: 10rem;
+    }
+
+    /* LOGO */
+    header h2 {
+        color: var(--red);
+        font-size: 4.0rem;
+        font-weight: 800;
+        margin-top: 30px;
+    }
+    
+    header .logo span {
+        margin-top: -60px;
+        margin-left: 188px;
+
+    }
+    /* MENU */
+    header nav a {
+        margin-left: 30px;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    header nav a:nth-child(4) { /* Botao */
+        display: none;
+    }
+
+        /* BANNER */
+    .container-banner {   
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .container-banner .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container-banner .banner-content img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .container-banner .banner-infos {
+        margin-top: 15%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .container-banner .banner-infos a{
+        padding: 18px 70px;
+        border-radius: 0.80rem;
+        font-size: 1.8rem;
+    }
+
+    /* SERVIÇOS */
+
+    .container-service {
+        margin-top: 40%;
+        margin-bottom: 30%;
+    }
+
+    .service-items {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+        
+    .container-service img {
+        width: 60%;
+        height: 60%;
+    }
+
+    /* List Services */
+    .service-items ul {
+        margin-bottom: 8%;
+    } 
+    
+    .service-items li {
+        list-style:none;
+        margin-right: 10px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 70px;  
+    }
+    
+    .service-items i {
+        margin-right: 15px;
+    }
+
+    
+    .texts-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 8%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texts-buttons p {
+        font-weight: 700;
+        font-size: 2.0rem;
+        margin-bottom: 5%;
+    }
+
+    .buttons a:nth-child(1) { 
+        padding: 28px 140px;
+        border-radius: 1.2rem;
+        font-size: 1.8rem;
+
+        margin-bottom: 5%;
+    }
+
+    .buttons a:nth-child(2) { 
+        padding: 28px 70px;
+        border-radius: 1.2rem;
+        font-size: 1.8rem;
+    }
+
+    /* TESTIMONIALS  */
+
+    .container-testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 550px;
+        border-radius: 0.80rem;
+        margin-bottom: 5%;
+    }
+ 
+    
+    .card .card-info p {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+    
+    .card .card-info .name {
+        font-size: 2.2rem;
+    }
+    
+    .card .card-info .company {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+    
+    .card .circulo-foto{
+        width: 100px;
+        height: 100px;
+        padding: 50px;
+    }
+
+ 
+    /* FOOTER */
+    .footer {
+        height: 800px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo h2{
+        font-size: 4.0rem;
+    }
+    .logo p{
+        font-size: 1.8rem;
+        margin-top: -3%;
+    }
+
+    .box {
+        margin-top: 8%;
+    }
+    .footer h3 {
+        font-size: 2.2rem;
+    }
+
+
+    .group {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 4.0rem;
+    }
+    .group i:nth-child(2){
+        margin-left: 8%;
+    }
+    .group i:nth-child(3){
+        margin-left: 8%;
+    }
+
+
 }
